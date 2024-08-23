@@ -1,20 +1,15 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "jsx": "preserve",
-    "module": "ESNext",
+    "target": "esnext",
+    "module": "esnext",
     "moduleResolution": "node",
-    "target": "ESNext",
     "strict": true,
-    "resolveJsonModule": true,
+    "jsx": "preserve",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "types": ["vite/client"] // This line is crucial
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "vite-env.d.ts"],
   "exclude": ["node_modules"]
 }
