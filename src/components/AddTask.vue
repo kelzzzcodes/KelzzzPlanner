@@ -80,7 +80,7 @@ const handleSubmit = () => {
                     <input type="date" v-model="dueDate" placeholder="Enter Description"
                         class="outline-none border-2 border-[#002263] rounded-md p-2" />
                 </div>
-                <Button :buttonClass="`!border-[#002263]`" :sectionClass="`justify-end`">
+                <Button :onclick="handleSubmit" :buttonClass="`!border-[#002263]`" :sectionClass="`justify-end`">
                     Submit
                 </Button>
             </form>
